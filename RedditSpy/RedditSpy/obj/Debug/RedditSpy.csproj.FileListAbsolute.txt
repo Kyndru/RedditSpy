@@ -1,0 +1,8 @@
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\bin\Debug\RedditSpy.exe.config
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\obj\Debug\RedditSpy.csprojResolveAssemblyReference.cache
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\bin\Debug\RedditSpy.exe
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\bin\Debug\RedditSpy.pdb
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\bin\Debug\HtmlAgilityPack.dll
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\bin\Debug\Newtonsoft.Json.dll
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\obj\Debug\RedditSpy.exe
+c:\users\lschneider\documents\visual studio 2012\Projects\RedditSpy\RedditSpy\obj\Debug\RedditSpy.pdb

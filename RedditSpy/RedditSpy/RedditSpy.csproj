@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E6D65F8-2BDF-4221-829D-BA8D2754D518}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RedditSpy</RootNamespace>
+    <AssemblyName>RedditSpy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\..\..\Music\RedditSharp-master\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Music\RedditSharp-master\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedditAPI\AuthenticatedUser.cs" />
+    <Compile Include="RedditAPI\Comment.cs" />
+    <Compile Include="RedditAPI\CreatedThing.cs" />
+    <Compile Include="RedditAPI\Extensions.cs" />
+    <Compile Include="RedditAPI\FlairTemplate.cs" />
+    <Compile Include="RedditAPI\FlairType.cs" />
+    <Compile Include="RedditAPI\IWebAgent.cs" />
+    <Compile Include="RedditAPI\Listing.cs" />
+    <Compile Include="RedditAPI\ModeratorPermission.cs" />
+    <Compile Include="RedditAPI\ModeratorUser.cs" />
+    <Compile Include="RedditAPI\MultipartFormBuilder.cs" />
+    <Compile Include="RedditAPI\Post.cs" />
+    <Compile Include="RedditAPI\PrivateMessage.cs" />
+    <Compile Include="RedditAPI\RateLimitException.cs" />
+    <Compile Include="RedditAPI\Reddit.cs" />
+    <Compile Include="RedditAPI\RedditException.cs" />
+    <Compile Include="RedditAPI\RedditUser.cs" />
+    <Compile Include="RedditAPI\Subreddit.cs" />
+    <Compile Include="RedditAPI\SubredditImage.cs" />
+    <Compile Include="RedditAPI\SubredditSettings.cs" />
+    <Compile Include="RedditAPI\SubredditStyle.cs" />
+    <Compile Include="RedditAPI\Thing.cs" />
+    <Compile Include="RedditAPI\UnixTimeStamp.cs" />
+    <Compile Include="RedditAPI\UnixTimestampConverter.cs" />
+    <Compile Include="RedditAPI\VotableThing.cs" />
+    <Compile Include="RedditAPI\WebAgent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
